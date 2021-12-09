@@ -19,7 +19,8 @@ export default {
   },
   created() {
     this.axios
-      .get('/api/calculator/test/5/')
+      // .get('/api/calculator/test/5/')
+      .get('https://warm-helix-333707.appspot.com/calculator/test/5')
       .then((res) => {
         console.log(res.data);
         this.watersData = res.data;
