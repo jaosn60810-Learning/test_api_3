@@ -21,7 +21,8 @@ export default {
     this.axios
       // .get('/api/calculator/test/5/')
       // .get('https://warm-helix-333707.appspot.com/api/shelter/')
-      .get('https://homework5-334114.appspot.com/api/test')
+      // .get('https://homework5-334114.appspot.com/api/test')
+      .get('https://www.taiwanstat.com/waters/latest')
       .then((res) => {
         console.log(res.data);
         this.watersData = res.data;
