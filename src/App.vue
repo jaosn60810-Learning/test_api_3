@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <h1 class="header1 text-center" style="color: red">
-      id is {{ watersData.id }}
+      id is {{ watersData }}
     </h1>
     <h1 class="header2 text-center" style="color: blue">
-      inputChar is {{ watersData.inputChar }}
+      inputChar is {{ watersData }}
     </h1>
   </div>
 </template>
@@ -20,7 +20,7 @@ export default {
   created() {
     this.axios
       // .get('/api/calculator/test/5/')
-      .get('https://warm-helix-333707.appspot.com/calculator/test/5/')
+      .get('https://warm-helix-333707.appspot.com/api/shelter/')
       .then((res) => {
         console.log(res.data);
         this.watersData = res.data;
