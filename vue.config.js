@@ -1,9 +1,9 @@
 //vue.config.js
 module.exports = {
-  // publicPath:
-  //   process.env.NODE_ENV === 'production'
-  //     ? '/test_api_3/' // test20200915 為 repo 名稱
-  //     : '/',
+  publicPath:
+    process.env.NODE_ENV === 'production'
+      ? '/test_api_3/' // test20200915 為 repo 名稱
+      : '/',
   publicPath: '/dist/',
   devServer: {
     // port: 8080,
